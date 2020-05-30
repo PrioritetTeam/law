@@ -3,61 +3,69 @@
     margin: 0 auto
 *
     box-sizing: border-box
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Lora'
     font-weight: 400
     
-@import "media"
-
-
 header
-    height: 50px
-    background-color: #0C1C38   
-    nav 
+    height: 64px
+    background-color: #0C1C38
+    nav
+        +fix_wide
+        display: flex
+        justify-content: space-between
         height: 100%
+        padding: 0 50px
         ul
-            width: 80%
-            height: 100%
             display: flex
             justify-content: space-between
-            align-items: center
-            margin: 0
-            list-style-type: none
-            padding: 0 0 0 200px
+            align-items: center 
+            color: #FFFFFF
+            width: 60%
+            padding-left: 0
             li
-                color: white
-                font-size: 16px
-                padding-left: 40px
-            p
-                padding-left: 150px
-                color: white
+                color: #FFFFFF
+                list-style-type: none
+                
+                
+                a
+                    text-decoration: none
+                    color: #FFFFFF
+        .tel
+            color: #FFFFFF  
+            display: flex
+            align-items: center
+            text-decoration: none
+
 .olga
     background: linear-gradient(270.06deg, rgba(10, 16, 27, 0.2) 13.02%, rgba(117, 137, 170, 0) 90.96%)
-    width: 100%
-    // margin: 0 auto
+    padding: 83px 0 0  0 
     &_globl
         +fix_wide
         display: flex
         justify-content: space-between
-        position: relative
-        top: 32px
-        // margin: 0 auto
+        padding: 0 30px 0 30px
         &_lawyer
-            position: relative
-            left: 200px
-            top: 100px
-            // margin: 0 auto
-        
+            margin-top: 120px
             h1
+                display: inline
                 font-size: 36px
-                line-height: 5px
                 color: #543B10
+                line-height: 20px
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 2px
+                    background: #543B10
+                    bottom: 0
+                    left: 0
+                    
             h2
                 font-size: 47px
-                line-height: 61px
                 color: #0C1C38
             h3
                 font-size: 25px
-                line-height: 32px
                 color: #707070
             &_button
                 width: 400px
@@ -68,80 +76,65 @@ header
                 font-size: 22px
             &_button:hover
                 transition: all 5s
-                // padding-left: 20px
-                transform: translate(10px)
 
-        img
-            width: 700px
-            position: relative
-            right: 150px
 .services
-    height: 670px
+    +fix_wide
+    padding: 80px 30px 90px 30px
     h2
-        text-align: center
-        padding: 72px 0 0 0 
+        text-align: center 
         color: #000000
         font-size: 40px
-        font-weight: bold
     &_global 
+        margin-top: 72px
         &_wrapper
-            display: flex
-            justify-content: center
-            align-items: center
-            margin: 0 auto
-            margin-top: 20px
-            width: 800px
-            height: 50px
-            background: rgba(214, 219, 230, 0.3)
-            border-radius: 5px
-            font-size: 15px
-            font-weight: bold
+            height: 100%
+            &_title
+                margin-top: 18px
+                background: rgba(214, 219, 230, 0.3)
+                padding: 30px 0 30px 30px
+                width: 100%
+                border-radius: 5px
+                position: relative
+                cursor: pointer
+                font-size: 24px
+                color: #000000
+                &::after
+                    content: ''
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    right: 20px
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: url('/../img/arrow.png') center center no-repeat
+
         &_bg
-            padding: 10px 0 30px 0
-            margin: 0 auto
-            width: 800px
-            max-height: 225px
-            background: rgba(118, 134, 171, 0.01);
+            margin-top: -18px
+            background: rgba(34, 35, 36, 0.01);
             border-radius: 5px
             ul
-                // display: inline-block
+                display: inline-block
+                font-size: 22px
                 li
-                    font-size: 18px
-                    line-height: 123.3%
+                    padding: 30px 0 30px 0
                     color: #4A4A4A
-                    b
-                        font-weight: bold
-                        font-size: 20px           
-                        line-height: 31px
-                        position: relative
-                        bottom: 49px
-                        right: 70px
-                        display: flex
-                        justify-content: flex-end
-                        color: #515152
 .aboutMe
-    max-height: 1920px
     background: rgba(214, 219, 230, 0.25)
+    padding: 73px 30px 0 30px
     &_title
         text-align: center
-        padding: 70px 0 0 0 
-        font-weight: bold
-        font-size: 40px
     &_wrapper
-        margin: 0 auto
-        width: 80%
+        +fix_wide
         display: flex
         justify-content: space-between
-        +fix_wide
-        img
-            width: 327px
-        h5
-            font-size: 20px
-            color: #515152
+        width: 75%
+        // img
+            // margin-top: 55px
 
-            b
-                font-weight: bold
-                font-size: 20px
+        h5
+            margin-top: 98px
+            font-size: 20px
+            line-height: 26px
 .operatingProcedure
     +fix_wide
     &_title
