@@ -1,0 +1,280 @@
+=fix_wide
+    max-width: 1200px
+    margin: 0 auto
+*
+    box-sizing: border-box
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    
+@import "media"
+
+
+header
+    height: 50px
+    background-color: #0C1C38   
+    nav 
+        height: 100%
+        ul
+            width: 80%
+            height: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            list-style-type: none
+            padding: 0 0 0 200px
+            li
+                color: white
+                font-size: 16px
+                padding-left: 40px
+            p
+                padding-left: 150px
+                color: white
+.olga
+    background: linear-gradient(270.06deg, rgba(10, 16, 27, 0.2) 13.02%, rgba(117, 137, 170, 0) 90.96%)
+    width: 100%
+    // margin: 0 auto
+    &_globl
+        +fix_wide
+        display: flex
+        justify-content: space-between
+        position: relative
+        top: 32px
+        // margin: 0 auto
+        &_lawyer
+            position: relative
+            left: 200px
+            top: 100px
+            // margin: 0 auto
+        
+            h1
+                font-size: 36px
+                line-height: 5px
+                color: #543B10
+            h2
+                font-size: 47px
+                line-height: 61px
+                color: #0C1C38
+            h3
+                font-size: 25px
+                line-height: 32px
+                color: #707070
+            &_button
+                width: 400px
+                height: 70px
+                background: #0C1C38
+                color: #FFFFFF
+                font-weight: bold
+                font-size: 22px
+            &_button:hover
+                transition: all 5s
+                // padding-left: 20px
+                transform: translate(10px)
+
+        img
+            width: 700px
+            position: relative
+            right: 150px
+.services
+    height: 670px
+    h2
+        text-align: center
+        padding: 72px 0 0 0 
+        color: #000000
+        font-size: 40px
+        font-weight: bold
+    &_global 
+        &_wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 auto
+            margin-top: 20px
+            width: 800px
+            height: 50px
+            background: rgba(214, 219, 230, 0.3)
+            border-radius: 5px
+            font-size: 15px
+            font-weight: bold
+        &_bg
+            padding: 10px 0 30px 0
+            margin: 0 auto
+            width: 800px
+            max-height: 225px
+            background: rgba(118, 134, 171, 0.01);
+            border-radius: 5px
+            ul
+                // display: inline-block
+                li
+                    font-size: 18px
+                    line-height: 123.3%
+                    color: #4A4A4A
+                    b
+                        font-weight: bold
+                        font-size: 20px           
+                        line-height: 31px
+                        position: relative
+                        bottom: 49px
+                        right: 70px
+                        display: flex
+                        justify-content: flex-end
+                        color: #515152
+.aboutMe
+    max-height: 1920px
+    background: rgba(214, 219, 230, 0.25)
+    &_title
+        text-align: center
+        padding: 70px 0 0 0 
+        font-weight: bold
+        font-size: 40px
+    &_wrapper
+        margin: 0 auto
+        width: 80%
+        display: flex
+        justify-content: space-between
+        +fix_wide
+        img
+            width: 327px
+        h5
+            font-size: 20px
+            color: #515152
+
+            b
+                font-weight: bold
+                font-size: 20px
+.operatingProcedure
+    +fix_wide
+    &_title
+        text-align: center
+        margin-top: 70px
+        font-weight: bold
+        font-size: 40px
+    &_wrapper
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        padding: 100px 0 82px 0
+
+        &_two
+            // width: 30px
+            width: 100%
+            &_circle
+                margin: 0 auto
+                width: 130px
+                height: 130px
+                background: #0C1C38
+                border-radius: 50%
+                display: flex
+                align-items:  center
+                img
+                    margin: 0 auto
+            &_subtitle
+                padding: 20px 0 0 0 
+                width: 60%
+                margin: 0 auto
+                text-align: center
+                color: #000000
+                font-weight: bold
+                font-size: 24px               
+.application
+    height: 600px
+    background: #0C1C38 
+    &_wrapper
+        padding-top: 10px
+        +fix_wide
+        &_title
+            font-size: 30px
+            color: #FFFFFF
+            text-align: center
+            padding-top: 40px           
+            font-weight: bold
+        &_field
+            margin: 0 auto
+            width: 655px
+            height: 71px
+            background: #FFFFFF
+            border-radius: 5px
+            display: block
+            margin-top: 50px
+        button
+            width: 430.67px
+            height: 70.93px
+            border: 2px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 5.06667px
+            display: block
+            margin: 0 auto
+            background: #0C1C38
+            margin-top: 50px
+            font-weight: bold
+            font-size: 20px
+            color: #FFFFFF
+        &_bottom
+            margin: 0 auto
+            width: 460px
+            margin-top: 50px              
+            display: block
+            text-align: center
+            font-size: 13.8462px
+            line-height: 18px
+            color: #FFFFFF
+.contacts
+    +fix_wide
+    &_title
+        text-align: center
+        margin-top: 60px
+        font-weight: bold
+    &_global
+        width: 70%
+        display: flex
+        justify-content: space-between
+        padding: 50px 0 30px 0
+        margin: 0 auto
+        &_wrapper
+            width: 30%
+            text-align: center
+            &_address
+                font-size: 18px
+                line-height: 27px
+                color: #000000  
+            &_postOffice
+                margin-top: 20px
+                // font-weight: bold    
+                font-size: 18px
+                line-height: 27px
+                color: #000000
+            &_clock
+                margin-top: 20px
+                // font-weight: bold
+                font-size: 18px
+                line-height: 27px
+                color: #000000
+            &_consultation
+                margin-top: 20px
+                font-size: 15px
+                line-height: 23px
+                color: #000000
+            &_number
+                margin-top: 30px
+                margin: 0 auto
+                width: 194.62px
+                height: 35px
+                background: #0C1C38
+                border-radius: 30.8784px
+                color: #FFFFFF
+                font-size: 18px
+                font-weight: bold
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-top: 30px
+footer
+    height: 90px
+    background: #0C1C38
+    .end
+        font-size: 15px
+        text-align: center
+        color: #FFFFFF
+        width: 55%
+        margin: 0 auto
+        padding-top: 30px
